@@ -510,7 +510,7 @@ img {
   transition-timing-function: var(--main-timing-function);
   display: flex;
   gap: 16px;
-  outline: none;
+  /* outline: none; */
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
@@ -674,6 +674,9 @@ img {
   padding: 0;
   cursor: pointer;
   margin-bottom: 24px;
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--main-timing-function);
 }
 .modal-close:is(:hover, :focus) {
   background-color: var(--pressed-state-color);
@@ -795,12 +798,12 @@ img {
 .policy-block {
   margin-bottom: 24px;
 }
-.policy-block input[type="checkbox"] {
+/* .policy-block input[type="checkbox"] {
   width: 16px;
   height: 16px;
   border: 1.25px solid var(--dark-color);
   border-radius: 2px;
-}
+} */
 .checkbox-lable {
   font-weight: 400;
   font-size: 12px;
